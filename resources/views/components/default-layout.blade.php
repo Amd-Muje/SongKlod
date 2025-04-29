@@ -6,8 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/reguler/style.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css">
+    <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+    <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+    />
     <title>{{ $title }}</title>
 </head>
 <body class="bg-gray-950">
@@ -20,7 +28,7 @@
             <ul class="hidden md:flex">
                 <li>
                     <a href="{{ route('dashboard') }}"
-                    class="{{ request()->is('dashboard') ? 'text-yellow-400' : 'text-white' }}
+                    class="{{ request()->is('dashboard') ? 'text-yellow-400' : 'text-gray-200' }}
                     text-gray-600 text-lg sm:text-xl hover:text-gray-200 hover:border-b-2 hover:border-gray-200 px-4 py-2">
                         Dashboard
                     </a>
